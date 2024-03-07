@@ -1,10 +1,10 @@
-## H1N1 AND SEASONAL FLU VACCINES
+## **H1N1 AND SEASONAL FLU VACCINES**
 
 Author: [Wallace Ouma](https://github.com/WKalawi)
 
 ![banner](https://github.com/WKalawi/H1N1-and-Seasonal-Flu-Vaccines/blob/main/Images/H1N1-VaccineEDIT.jpg)
 
-**Business and Data Understanding**
+## Business and Data Understanding
 
 Data Source: [DrivenData](https://www.drivendata.org/competitions/66/flu-shot-learning/)
 
@@ -12,17 +12,17 @@ This project focuses on vaccination, a crucial public health strategy against in
 
 In this evaluation, the target variable pertains to whether an individual will voluntarily receive either an influenza or H1N1 vaccine, as indicated by past data randomly gathered from households across the United States. This data collection was conducted through random-digit-dialing of telephones within these households. Two distinct target variables exist: one for the H1N1 vaccine and another for the Seasonal Flu vaccine. These target variables are already clearly defined and binary, simplifying the preprocessing process. Given that the dataset is comprehensive, this evaluation will be approached as a supervised learning experience.
 
-**Data Preparation**
+## Data Preparation
 
 The dataset provided for addressing this issue is succinct and directly relevant to the business problem at hand. Both the testing and training data are formatted as feature vectors, facilitating modeling efforts with minimal need for extensive formatting adjustments. While some preprocessing steps are necessary, the dataset requires relatively little modification before processing. It encompasses responses from a telephone-administered survey, covering a range of topics including concerns and knowledge about H1N1, behavioral patterns like antiviral medication usage and social habits, recommendations from doctors regarding vaccines, presence of chronic medical conditions, and demographic details such as age, education, race, income, and employment status. During the data preparation phase, careful examination was undertaken for any missing values that could affect model evaluation, with replacement by mode values as appropriate. Additionally, identification and removal of outlier data points that could skew results were performed. Given that the survey was conducted randomly across the United States, the collected data and predicted outcomes should theoretically provide an accurate representation of the broader U.S. population.
 
-**Modelling**
+## Modelling
 
 The objective of developing a model using this data is to determine the probability of people who meet specific demographic parameters receiving either an H1N1 or seasonal influenza vaccination. This project will use a supervised learning method due to the comprehensive nature of the dataset. The dataset mainly comprises binary or numeric qualitative category factors and non-numeric demographic data from survey replies.
 
 The dataset consists mainly of categorical data, with numeric values representing qualitative variables derived from survey replies rather than quantitative metrics. Several modeling strategies were investigated, such as logistic regression, gradient boosting classifier, decision tree, improved decision tree, random forest, optimized random forest, k-nearest neighbors, and ensemble modeling. The analysis was conducted using Python at Google Colaboratory. The assumption was that ensemble modeling, combining numerous models to build a more accurate and complete model, would provide the most optimal outcomes. The models chosen for integration into the ensemble model were based on their success rates, specifically focusing on the Area Under the Curve (AUC). Next, the models will be assessed by using them on the test dataset to compare their performance.
 
-**Evaluation and Deployment**
+## Evaluation and Deployment
 
 The effectiveness of models developed in this process will be determined by comparing their Area Under the Curve (AUC) values, a metric derived from the Receiver Operating Characteristic (ROC) curve. While accuracy is often used to gauge model performance, AUC offers a more insightful measure by considering the true positive rate against the false positive rate (Hozanoet al., 2017). This approach discourages the selection of models merely representative of data but not necessarily discriminative, thereby promoting models that achieve above-random chance true positive and false positive rates. By splitting the dataset into training and test sets, model performance can be accurately assessed. For each scenario, such as predicting H1N1 or seasonal flu vaccine recipients, separate training and test sets were created, allowing for rigorous evaluation. Feature scaling, which normalizes data for easier modeling, and Lasso (L1-Regularization) for feature selection were applied to enhance model robustness. The choice between models like Random Forest with Cross Validation and Gradient Boosting Classifier was informed by their performance and computational efficiency, considering resource constraints.
 
