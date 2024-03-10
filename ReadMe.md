@@ -32,6 +32,14 @@ The primary objective of this modeling endeavor is cost reduction, particularly 
 
 The analysis of predictive models for H1N1 Vaccine and Seasonal Flu Vaccine acceptance reveals valuable insights into public health challenges. By utilizing past immunization survey data and various supervised learning algorithms, we assessed vaccine acceptance likelihood based on demographics. While ensemble modeling initially seemed promising, individual models often outperformed, raising concerns about overfitting. The Decision Tree (original) model excelled for H1N1 Vaccine prediction, while the Random Forest (CV) model showed superior performance for Seasonal Flu Vaccine prediction. These findings highlight the importance of tailored modeling techniques and the potential of predictive analytics to inform public health decisions. However, external factors like the COVID-19 pandemic may influence vaccine acceptance rates, necessitating ongoing model refinement. Overall, predictive modeling offers opportunities to optimize resource allocation, mitigate costs, and enhance intervention strategies for improved public health outcomes.
 
+
+**Repository Components**
+
+* `ReadMe`
+* `ProjectNotebook`
+* [`Presentation`](https://www.canva.com/design/DAF_Fwz82xM/7FGEg3AGxyPqvaodjZ65xQ/edit?utm_content=DAF_Fwz82xM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+* `DataSets Directory`
+
 **References**
 
 DrivenData. (n.d.). Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines. Retrieved March 4, 2024, from https://www.drivendata.org/competitions/66/flu-shot-learning/ 
